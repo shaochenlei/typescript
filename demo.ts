@@ -37,6 +37,11 @@ getPersonName(person);
 setPersonName(person,'lee');
 //类想用接口
 class User implements Person {
+    [propName: string]: any;
+    age?: number | undefined;
+    getName(): string {
+        throw new Error("Method not implemented.");
+    }
     name = 'dell';
     say(){
         return 'hello';
