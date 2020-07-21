@@ -1,12 +1,12 @@
 class Demo {
   private static instance: Demo;
-  private constructor(public name: string) {}
+  private constructor(public name: string) { }
 
   static getInstance() {
-      if(!this.instance){
-          this.instance = new Demo('dell lee');
-      }
-      return this.instance;
+    if (!this.instance) {
+      this.instance = new Demo('dell lee');
+    }
+    return this.instance;
   }
 }
 const demo1 = Demo.getInstance();

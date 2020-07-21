@@ -1,6 +1,6 @@
 //类定义重写继承super重新调用(super)
 class Person {
-    name='dell';
+    name = 'dell';
     getName() {
         return this.name;
     }

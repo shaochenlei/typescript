@@ -10,10 +10,10 @@
 // console.log(person.name);
 
 //抽象类
-abstract class Geom{
+abstract class Geom {
     width: number;
     radius: number;
-    getType(){
+    getType() {
         return 'Gemo';
     }
     abstract getArea(): number;
@@ -36,20 +36,20 @@ abstract class Geom{
 
 //接口 通用性封装
 
-interface Person{
+interface Person {
     name: string;
 }
 
-interface Teacher extends Person{
+interface Teacher extends Person {
     teachingAge: number;
 }
 
-interface Student extends Person{
+interface Student extends Person {
     age: number;
 }
 
 //继续加类型
-interface Driver{
+interface Driver {
     name: string;
     age: number;
 }
@@ -59,13 +59,13 @@ const teacher = {
     teachingAge: 3
 }
 
-const student ={
+const student = {
     name: 'lee',
     age: 18
 }
 
-const getUserInfo = (user:Person) => {
-   console.log(user.name);
+const getUserInfo = (user: Person) => {
+    console.log(user.name);
 }
 
 getUserInfo(teacher);
